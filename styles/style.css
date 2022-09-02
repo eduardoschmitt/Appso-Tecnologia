@@ -1,0 +1,407 @@
+/* =~=~=~= Importando Sans Serif =~=~=~=*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+:root{
+    --azul-appso: rgb(36, 14, 146);
+    --azul-ceu: rgb(27, 142, 219);
+    --cinza-appso: rgb(189, 189, 189);
+    --cinza-menu: rgb(61, 61, 61);
+    background-color: white;
+}
+
+/* =~=~=~= RESET CSS =~=~=~= */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* =~=~=~= MENU PRINCIPAL =~=~=~= */
+header {
+    position: fixed;
+    top:0;
+    left:0px;
+    width: 100%;
+    max-width: 150%;
+    height: 12vh;
+    background:#ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    place-items: center;
+    z-index: 99;
+
+}
+
+header img {
+    padding: 15px;
+    max-width: 20vh;
+}
+
+.menu-principal {
+    font-size: 20px;;
+    display: grid;
+    justify-items: center;
+}
+
+.menu-principal ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    align-items: center;
+}
+
+.menu-principal ul li a {
+    max-width: 20vh;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-principal ul li a:hover {
+    /*transition: 0.5s;
+    color: rgb(45, 9, 226);*/
+    text-decoration: none;
+    color: black;
+    border-bottom: solid 2px rgb(45, 9, 226);
+}
+
+@media only screen and (max-width: 800px) {
+
+    header img {
+        width: 85px;
+    }
+
+    .menu-principal ul li {
+        font-size: 15px;
+    }
+
+}
+
+
+
+/* =~=~=~=~= INICIO =~=~=~=~= */
+.inicio {
+    padding: 100px 50px 30px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    font-style: inherit;
+}
+
+.inicio h2 {
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.inicio h2 strong {
+    color: var(--azul-appso);
+}
+
+.inicio button {
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--azul-appso);
+    font-size: 20px;
+    border: none;
+}
+
+.inicio button a {
+    text-decoration: none;
+    color: white;
+}
+
+.inicio img {
+    border-radius: 400px;
+    animation: fadeAway 10s ease-out;
+    opacity: 0;
+}
+
+@keyframes fadeAway {
+    from {
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.inicio p {
+    color: rgb(29, 29, 29);
+    padding: 0px 0px 20px 0px;
+}
+
+/* Mobile Inicio */
+@media only screen and (max-width: 1300px) {
+    .inicio img {
+        width: 300;
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .inicio{
+        display: block;
+        text-align: center;
+
+    }
+
+    .inicio button {
+        width: 150px;
+        height: 100px;
+    }
+
+    .inicio h2 {
+        font-size: 20px;
+        padding: 0px 0px 10px 0px;
+    }
+
+    .inicio img {
+        width: 250px;
+        height: 200px;
+    }
+  }
+
+@media only screen and (max-width: 350px) {
+    .inicio {
+        padding: 300px 0px 0px 0px;
+    }
+    
+    .inicio img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+/* =~=~=~=~ PROJETOS =~=~=~=~ */
+.organiza-projetos {
+    padding: 20px 0px 70px 0px;
+}
+
+.organiza-projetos h2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    font-size: 50px;
+    color: var(--azul-appso);
+}
+
+.projetos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.projetos-texto {
+    color: rgb(20, 20, 20);
+    font-size: 20px;
+    display: grid;
+
+    place-items: center;
+}
+
+.projetos-banner-01 {
+    display: grid;
+    place-items: center;
+}
+
+.projetos-banner-01 img{
+    width: 20vw;
+    height: 40vh;
+}
+
+.projetos-banner-02 {
+    display: grid;
+    place-items: center;
+}
+
+.projetos-banner-02 img{
+    width: 30vw;
+    height: 17vh;
+}
+
+@media only screen and (max-width: 1000px){
+
+    .projetos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .projetos {
+        display: block;
+        padding: 15px;
+    }
+
+    .projetos-banner-01 img{
+        width: 30vw;
+        height: 35vh;
+    }
+    .projetos-banner-02 img{
+        width: 50vw;
+        height: 20vh;
+    }
+
+    .projetos p{
+        padding: 0px 0px 30px 0px;
+    }
+}
+
+
+/* =~=~=~=~=~ QUEM SOMOS =~=~=~=~=~ */
+.quem-somos {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    text-align: center;
+    color: white;
+    box-shadow: 100px;
+    background-image: url(cyber-appso-desfoque.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+}
+
+.quem-somos img {
+    opacity: 1;
+}
+
+.quem-somos p{
+    padding: 15px;
+    text-align: justify;
+}
+
+.quem-somos h3, img {
+    padding: 15px;
+}
+
+.quem-somos h2 {
+    padding: 100px 0px 25px 0px;
+}
+
+/* Mobile Quem Somos*/
+
+@media only screen and (max-width: 800px) {
+    .quem-somos {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+/* Quem somos - Imagem Logo Appso */
+@media only screen and (max-width: 350px) {
+    .quem-somos img {
+        width: 50px;
+        height: 25px;
+    }
+}
+
+
+/* =~=~=~= CONTATO =~=~=~= */
+.contato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    padding: 100px 0px;
+}
+
+.contato-email p, .contato-info p {
+    margin: auto;
+    text-align: center;
+    align-content: center;
+}
+
+.contato-email, .contato-info {
+    display: flex;
+    text-align: center;
+    justify-items: center;
+}
+
+.contato img {
+    width: 78px;
+    height: 78px;
+}
+
+/* Mobile Contato */
+@media only screen and (max-width: 800px) {
+    .contato {
+        display: block;
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .contato p {
+        text-align: left;
+    }
+
+    .contato img {
+        display: block;
+        width: 25px;
+        height: 25px;
+    }
+
+    .contato-email, .contato-info {
+        display: grid;
+    }
+
+    .contato-info p {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .contato img {
+        width: 0px;
+    }
+
+    .contato-email, .contato-info {
+        display: inline-block;
+        text-align: left;
+        justify-items: left;
+    }
+
+    .contato-info p {
+        text-align: left;
+    }
+}
+
+/* =~=~=~ Rodapé =~=~=~ */
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+footer p {
+    padding: 15px;
+}
+
+/* =~=~=~ Barra de Rolagem =~=~=~ */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+  
+body::-webkit-scrollbar-track {
+    background: rgb(43, 43, 43);
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--azul-appso);
+    border-radius: 20px;
+}
+
+* { /* FIREFOX */
+    scrollbar-width: thin;
+    scrollbar-color: rgb(43, 43, 43) var(--azul-appso);
+}
+
+/* =~=~=~= CRÉDITOS =~=~=~= 
+   Autor: Eduardo Schmitt   
+   Ano: 2022                
+                          
+   icones retiradas de:     
+   fonts.google.com/icons */
