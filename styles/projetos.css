@@ -1,0 +1,76 @@
+@import url("style. css");
+
+/* =~=~=~=~ SESSÃO DE PROJETOS =~=~=~=~ */
+.titulo-sessao {
+    padding: 70px 50px 30px 50px;
+    text-align: center;
+}
+
+.titulo-sessao h1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    font-size: calc(1em + 3vw);
+    color: var(--azul-appso);
+    padding: 14px;
+}
+
+.projeto-01 {
+    padding: 0 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    text-align: center;
+}
+
+.projeto-01 div {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.projeto-01 img {
+    width: 50%;
+}
+
+
+/* =~=~=~=~ PARCEIROS =~=~=~=~ */
+.parceiros h1{
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    font-size: calc(1em + 1vw);
+    color: var(--azul-appso);
+    padding: 14px;
+}
+
+.parceiros-logo {
+    padding: 0 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    text-align: center;
+}
+
+.parceiros-logo img {
+    width: 50%;
+}
+
+/* =~=~=~=~ BOTÃO VOLTAR =~=~=~=~ */
+.voltar {
+    display: grid;
+    place-items: center;
+    padding: 15px;
+}
+
+.voltar a {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 30px;
+    background-color: var(--azul-appso);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,14,146,1) 37%, rgba(0,212,255,1) 100%);
+    font-size: 20px;
+    border: none;
+    transition: 2s;
+}
