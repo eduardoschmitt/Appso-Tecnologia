@@ -98,11 +98,11 @@ header img {
 
 
 .inicio-texto a {
+    display: block;
     text-decoration: none;
     color: white;
+    width: 35%;
     padding: 15px 30px;
-    width: 250px;
-    height: 60px;
     border-radius: 30px;
     background-color: var(--azul-appso);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,14,146,1) 37%, rgba(0,212,255,1) 100%);
@@ -142,19 +142,18 @@ header img {
         width: 300;
         height: 200px;
     }
+
+    .inicio {
+        grid-template-columns: 1fr;
+        place-items: center;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
 
     .inicio{
-        display: block;
         text-align: center;
-
-    }
-
-    .inicio button {
-        width: 150px;
-        height: 100px;
     }
 
     .inicio h2 {
@@ -249,6 +248,19 @@ header img {
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
+    }
+
+    .projetos-titulo-div h2, .projetos-titulo-div p {
+        width: 50%;
+        padding: 0 0 15px 0;
+    }
+
+    .projetos-titulo-div a {
+        width: 100%;
+    }
+
+    .projetos img, .projetos p {
+        width: 50%;
     }
 }
 
