@@ -16,9 +16,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-
-
-
 /* =~=~=~= MENU PRINCIPAL =~=~=~= */
 header {
     position: fixed;
@@ -101,7 +98,7 @@ header img {
     display: block;
     text-decoration: none;
     color: white;
-    width: 35%;
+    width: 40%;
     padding: 15px 30px;
     border-radius: 30px;
     background-color: var(--azul-appso);
@@ -109,6 +106,10 @@ header img {
     font-size: 20px;
     border: none;
     transition: 2s;
+}
+
+.inicio-texto p {
+    font-size: 20px;
 }
 
 .inicio-texto a:hover {
@@ -141,6 +142,11 @@ header img {
     .inicio img {
         width: 300;
         height: 200px;
+    }
+
+    .inicio-texto {
+        display: grid;
+        place-items: center;
     }
 
     .inicio {
@@ -239,7 +245,7 @@ header img {
 
 .projetos p {
     padding: 5px;
-    font-size: clamp(10px, 18px, 20px);
+    font-size: clamp(10px, 20px, 30px);
 }
 
 @media only screen and (max-width: 1000px){
@@ -274,6 +280,7 @@ header img {
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.9;
+    font-size: 18px;
 }
 
 .quem-somos img {
