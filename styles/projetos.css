@@ -32,6 +32,18 @@
     width: 50%;
 }
 
+@media only screen and (max-width: 750px) {
+
+    .projeto-01 {
+        grid-template-columns: 1fr;
+    }
+
+    .projeto-01 img {
+        width: 100%;
+    }
+
+}
+
 
 /* =~=~=~=~ PARCEIROS =~=~=~=~ */
 .parceiros h1{
@@ -53,6 +65,18 @@
 
 .parceiros-logo img {
     width: 50%;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .parceiros-logo {
+        grid-template-columns: 1fr;
+    }
+
+    .parceiros-logo img {
+        width: 100%;
+    }
+
 }
 
 /* =~=~=~=~ BOTÃO VOLTAR =~=~=~=~ */

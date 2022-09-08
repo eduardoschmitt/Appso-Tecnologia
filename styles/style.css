@@ -98,7 +98,7 @@ header img {
     display: block;
     text-decoration: none;
     color: white;
-    width: 40%;
+    width: 35%;
     padding: 15px 30px;
     border-radius: 30px;
     background-color: var(--azul-appso);
@@ -111,7 +111,6 @@ header img {
 .inicio-texto p {
     font-size: 20px;
 }
-
 .inicio-texto a:hover {
     transition: 1s; 
     animation: fadeAway 2s ease-out;
@@ -154,6 +153,7 @@ header img {
         place-items: center;
         text-align: center;
     }
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -170,12 +170,13 @@ header img {
     .inicio img {
         width: 250px;
         height: 200px;
+        margin: 30px;
     }
 }
 
 @media only screen and (max-width: 350px) {
     .inicio {
-        padding: 300px 0 0 0;
+
     }
     
     .inicio img {
@@ -250,10 +251,19 @@ header img {
 
 @media only screen and (max-width: 1000px) {
 
-    .projetos {
+    .organiza-projetos {
+        padding: 0 0 0 0;
         display: grid;
+        place-items: center;
+    }
+
+    .projetos section {
+        display: grid;
+        place-items: center;
+    }
+
+    .projetos {
         grid-template-columns: 1fr;
-        justify-items: center;
     }
 
     .projetos-titulo-div h2, .projetos-titulo-div p {
