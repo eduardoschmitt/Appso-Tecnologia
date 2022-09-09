@@ -1,5 +1,7 @@
 @import url("style. css");
 
+
+
 /* =~=~=~=~ SESSÃO DE PROJETOS =~=~=~=~ */
 .titulo-sessao {
     padding: 70px 50px 30px 50px;
@@ -12,24 +14,57 @@
     place-items: center;
     font-size: calc(1em + 3vw);
     color: var(--azul-appso);
-    padding: 14px;
+    padding: 1px;
+    font-style: bold;
+}
+
+.titulo-sessao h2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    font-size: calc(1em + 1vw);
+    color: rgb(34, 34, 34);
+    padding: 20px 0 0 0;
+}
+
+.titulo-sessao p {
+    color: rgb(44, 44, 44);
 }
 
 .projeto-01 {
     padding: 0 150px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    place-items: center;
+    place-items: start center;
     text-align: center;
-}
-
-.projeto-01 div {
-    display: grid;
-    grid-template-columns: 1fr;
 }
 
 .projeto-01 img {
     width: 50%;
+}
+
+.projeto-01-alinhar {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+}
+
+.projeto-01-alinhar h3 {
+    color: rgb(34, 34, 34);
+}
+
+.projeto-01-alinhar h4 {
+    color: rgb(44, 44, 44);
+    text-decoration: none;
+    font-weight: normal;
+    padding: 10px;
+}
+
+.projeto-01-alinhar a {
+    text-decoration: none;
+    color: var(--azul-appso);
+    font-weight: bold;
+    padding: 10px;
 }
 
 @media only screen and (max-width: 750px) {
@@ -40,6 +75,10 @@
 
     .projeto-01 img {
         width: 100%;
+    }
+
+    .titulo-sessao {
+        padding: 100px 0 0 0;
     }
 
 }
@@ -93,7 +132,7 @@
     padding: 13px 30px;
     border-radius: 30px;
     background-color: var(--azul-appso);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,14,146,1) 37%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,14,146,1) 35%, rgba(0,125,255,1) 100%);
     font-size: 20px;
     border: none;
     transition: 2s;

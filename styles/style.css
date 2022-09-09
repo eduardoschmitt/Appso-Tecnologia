@@ -6,6 +6,7 @@
     --azul-ceu: rgb(27, 142, 219);
     --cinza-appso: rgb(189, 189, 189);
     --cinza-menu: rgb(61, 61, 61);
+    --gradient-appso: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,14,146,1) 35%, rgba(0,125,255,1) 100%);
     background-color: white;
 }
 
@@ -98,11 +99,11 @@ header img {
     display: block;
     text-decoration: none;
     color: white;
-    width: 35%;
+    width: 31%;
     padding: 15px 30px;
     border-radius: 30px;
     background-color: var(--azul-appso);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,14,146,1) 37%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(36,14,146,1) 35%, rgba(0,125,255,1) 100%);
     font-size: 20px;
     border: none;
     transition: 2s;
@@ -168,9 +169,16 @@ header img {
     }
 
     .inicio img {
+        border-radius: 10px;
         width: 250px;
         height: 200px;
         margin: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .inicio-texto{
+        margin: 20px 0 0 0;
     }
 }
 
@@ -245,8 +253,18 @@ header img {
 }
 
 .projetos p {
+    font-size: 2vh;
     padding: 5px;
     font-size: clamp(10px, 20px, 30px);
+}
+
+.projetos h3 {
+    font-size: 3vh;
+    color: var(--azul-appso);
+}
+
+.projetos strong {
+    color: var(--azul-appso);
 }
 
 @media only screen and (max-width: 1000px) {
