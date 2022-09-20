@@ -137,3 +137,8 @@
     border: none;
     transition: 2s;
 }
+
+.voltar a:hover {
+    transition: 1s;
+    box-shadow: rgb(0, 31, 65) 0 2px 10px;
+}
